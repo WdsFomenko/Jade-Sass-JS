@@ -11,7 +11,58 @@ html(lang='en')
         script(src='js/main.js')
     body
         .content-box
-            // ---- Custom style list must be here -------
-
-
-            //--------------------------------------------
+            .bus-trip-form-block.clearfix
+              form.bus-trip-form(method='post', action='')
+                .bus-form-header
+                  .bus-header-action
+                    span +  
+                    span Ajouter une journee
+                  .bus-header-title
+                    span JOUR 1
+                .bus-form-type
+                  .bus-type-item
+                    .bus-item-field
+                       div.bus-item-icon
+                       label(for='trip_type') TYPE DE TRAJET
+                       select#trip_type(name='trip_type')
+                         option Slower
+                         option Slow
+                         option(selected='selected') Medium
+                         option Fast
+                         option Faster
+                  .bus-item-parts
+                    .part-one
+                      .part-one-left
+                        div.part-item-icon
+                        label(for='part-one-input') LIEU DE DEPART
+                        input(id='part-one-input')
+                      .part-one-center
+                        .bus-item-field
+                            div.date_picker_control 
+                            label(for='depart_date') DEPART
+                            input#depart_date(name='depart_date')
+                      .part-one-right
+                         .bus-item-field
+                            label(for='depart_time') HEURE DE DEPART
+                            select#depart_time(name='depart_time')
+                                option 9h30
+                                option 12h30
+                    .part-next
+                        .part-next-left
+                            div.part-item-icon.part-pasive
+                            label(for='part-next-input') LIEU DE ARRIVE
+                            input(id='part-next-input')
+                        .part-next-center
+                            .bus-item-field
+                                label(for='sur_place') DUREE SUR PLACE
+                                select#sur_place(name='sur_place')
+                                    option 4h30
+                                    option 5h30
+                        .part-next-right
+                .bus-form-steps
+                    .steps-header
+                        .steps-icon
+                        .steps-title
+                        .steps-action
+                .bus-form-passenger
+                .bus-form-footer

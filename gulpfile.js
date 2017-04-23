@@ -35,8 +35,7 @@ gulp.task('clean', function (cb) {
 });
 
 gulp.task('images', ['clean'], function() {
-  return gulp.src(paths.images)
-    .pipe(imagemin({optimizationLevel: 5}))
+  return gulp.src('src/img/*')
     .pipe(gulp.dest('dist/img'));
 });
 

@@ -28,23 +28,305 @@
 
 html{
  width: 100%;
- height: 100%;
  body{
   width: 100%;
-  height: 100%;
   background: url("../img/trassa.jpg") 50% 50% no-repeat;
-  -webkit-background-size:cover;
-  background-size: cover;
+  -webkit-background-size:100% 100%;
+  background-size: 100% 100%;
   position: relative;
   .content-box{
-   width: 70%;
-   height: 200px;
-   top: 100px;
+   width: 50%;
    position: relative;
-   margin: 0 auto;
+   margin: 0 auto ;
+   background-color: white;
+   opacity: 0.95;
+   &:after{
+    content:'';
+    display: block;
+    clear: both;
+   }
    // ---- Custom style list must be here -------
+   .et_pb_row, .et_pb_column .et_pb_row_inner{
+    padding: 0 !important;
+   }
 
+   .bus-trip-form-block{
+    width: 100%;
+    position: relative;
+    box-shadow: 0 0 20px #0099ff;
+    &:after{
+     content:'';
+     display: block;
+     clear: both;
+    }
+    .bus-trip-form{
+     width: 100%;
+     position: relative;
 
+     .bus-form-header{
+      width: 100%;
+      height: 40px;
+      background-color: #0099ff;
+      .bus-header-title{
+       height: 40px;
+       margin-right: 180px;
+       line-height: 40px;
+       text-align: center;
+       color: white;
+       font-weight: bold;
+      }
+      .bus-header-action{
+       height: 40px;
+       width: 180px;
+       float: right;
+       line-height: 40px;
+       color: white;
+       font-weight: bold;
+      }
+     }
+     .bus-form-type{
+      width: 100%;
+      min-height: 155px;
+      margin-bottom: 20px;
+      background-color: #ffffff;
+      opacity: 1;
+      .bus-type-item{
+       width: 100%;
+       .bus-item-field{
+        position: relative;
+        .bus-item-icon{
+         width: 30px;
+         height: 30px;
+         position: absolute;
+         top: 20px;
+         left: 5px;
+         background: url("../img/form icon1.png");
+        }
+        width: 100%;
+        label {
+         display: block;
+         font-size: 75%;
+         margin: 16px 0 3px 56px;
+        }
+        .overflow {
+         height: 150px;
+        }
+        #trip_type-button{
+         width: 80%;
+         margin-left: 53px;
+         outline-color: #0099ff !important;
+         &:focus{
+          border: 1px solid #0099ff !important;
+         }
+         .ui-selectmenu-icon{
+          background: url("../img/icon.png") 50% 50% no-repeat !important;
+          -webkit-background-size:100% 100%;
+          background-size:90% 90%;
+          outline-color: transparent !important;
+          left: 45px;
+         }
+         .ui-selectmenu-text{
+          font-size: 100%;
+          color: #006699;
+         }
+        }
+       }
+      }
+      .part-one{
+       .part-one-left{
+        display: inline-block;
+        width: 50%;
+        height: 100%;
+        position: relative;
+        .part-item-icon{
+         width: 15px;
+         height: 15px;
+         position: absolute;
+         top: 35px;
+         left: 15px;
+         background: url("../img/day1_03.png") 50% 50% no-repeat;
+        }
+        label{
+         display: block;
+         font-size: 75%;
+         margin: 10px 0 3px 56px;
+        }
+        input{
+         height: 30px;
+         width: 80%;
+         font-size: 100%;
+         color: #006699;
+         outline-color: #0099ff !important;
+         margin-left: 53px;
+         &:focus{
+          border: 1px solid #0099ff !important;
+         }
+        }
+       }
+       .part-one-center{
+        width: 25%;
+        display: inline-block;
+        height: 100%;
+        .bus-item-field{
+         position: relative;
+         width: 100%;
+         .date_picker_control{
+          position: absolute;
+          top: 25px;
+          right: 20px;
+          width: 20px;
+          height: 20px;
+          background: url(../img/calendar.png) 50% 50% no-repeat;
+         }
+         label {
+          display: block;
+          font-size: 75%;
+          margin: 16px 0 3px 0;
+         }
+         input{
+          width: 90%;
+          display: inline-block;
+          height: 30px;
+          outline-color: #0099ff !important;
+          font-size: 100%;
+          color: #006699;
+          &:focus{
+           border: 1px solid #0099ff !important;
+          }
+         }
+        }
+       }
+       .part-one-right{
+        width: 25%;
+        display: inline-block;
+        height: 100%;
+        .bus-item-field{
+         position: relative;
+         width: 100%;
+         label {
+          display: block;
+          font-size: 75%;
+          margin: 16px 0 3px 0;
+         }
+         .overflow {
+          height: 150px;
+         }
+         #depart_time-button{
+          width: 50%;
+          outline-color: #0099ff !important;
+          &:focus{
+           border: 1px solid #0099ff !important;
+          }
+          .ui-selectmenu-icon{
+           background: url("../img/icon.png") 50% 50% no-repeat !important;
+           -webkit-background-size:100% 100%;
+           background-size:90% 90%;
+           outline-color: transparent !important;
+           left: 50px;
+          }
+          .ui-selectmenu-text{
+           font-size: 100%;
+           color: #006699;
+          }
+         }
+        }
+       }
+      }
+      .part-next{
+       .part-next-left{
+        width: 50%;
+        display: inline-block;
+        position: relative;
+        .part-item-icon{
+         width: 15px;
+         height: 15px;
+         position: absolute;
+         top: 45px;
+         left: 15px;
+         background: url("../img/day1_03.png") 50% 50% no-repeat;
+         &.part-pasive{
+          background: url("../img/day1_03_pasive.png") 50% 50% no-repeat
+         }
+        }
+        label{
+         display: block;
+         font-size: 75%;
+         margin: 20px 0 3px 56px;
+        }
+        input{
+         height: 30px;
+         width: 80%;
+         font-size: 100%;
+         color: #006699;
+         outline-color: #0099ff !important;
+         margin-left: 53px;
+         &:focus{
+          border: 1px solid #0099ff !important;
+         }
+        }
+       }
+       .part-next-center{
+        width: 25%;
+        display: inline-block;
+        .bus-item-field{
+         position: relative;
+         width: 100%;
+         label {
+          display: block;
+          font-size: 75%;
+          margin: 16px 0 3px 0;
+         }
+         .overflow {
+          height: 150px;
+         }
+         #sur_place-button{
+          width: 50%;
+          outline-color: #0099ff !important;
+          &:focus{
+           border: 1px solid #0099ff !important;
+          }
+          .ui-selectmenu-icon{
+           background: url("../img/icon.png") 50% 50% no-repeat !important;
+           -webkit-background-size:100% 100%;
+           background-size:90% 90%;
+           outline-color: transparent !important;
+           left: 50px;
+          }
+          .ui-selectmenu-text{
+           font-size: 100%;
+           color: #006699;
+          }
+         }
+        }
+       }
+       .part-next-right{
+        width: 25%;
+        display: inline-block;
+
+       }
+      }
+     }
+     .bus-form-steps{
+      width: 100%;
+      min-height: 245px;
+      background-color: #f5f8fa;
+
+     }
+     .bus-form-passenger{
+      width: 100%;
+      min-height: 180px;
+      background-color: #ffffff;
+     }
+     .bus-form-footer{
+      width: 100%;
+      height: 5px;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      background-color: #0099ff;
+     }
+    }
+   }
    //--------------------------------------------
   }
  }
