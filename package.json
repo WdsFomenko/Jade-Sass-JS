@@ -1,0 +1,32 @@
+{
+  "name": "jade-sass-js-environment",
+  "version": "1.0.0",
+  "description": "Environment which must use in creating new Jade-SASS-JS projcts",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Jade",
+    "SASS",
+    "JS",
+    "JQUERY"
+  ],
+  "author": "Vitaliy Fomenko",
+  "license": "ISC",
+  "dependencies": {
+    "browser-sync": "^2.18.8",
+    "del": "^2.2.2",
+    "gulp": "^3.9.1",
+    "gulp-clean": "^0.3.2",
+    "gulp-imagemin": "^3.2.0",
+    "gulp-jade": "^1.1.0",
+    "gulp-livereload": "^3.8.1",
+    "gulp-ruby-sass": "^2.1.1",
+    "gulp-sass": "^3.1.0",
+    "http": "0.0.0",
+    "live-server": "^1.2.0",
+    "run-sequence": "^1.2.2",
+    "st": "^1.2.0"
+  }
+}
