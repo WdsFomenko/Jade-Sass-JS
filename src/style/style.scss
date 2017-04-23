@@ -1,73 +1,78 @@
-*{
+* {
  padding: 0;
  margin: 0;
  font-size: 100%;
  border-collapse: collapse;
 }
 
-@media all{
-
-}
-@media(min-width: 868px){
-
-}
-@media(min-width: 1190px){
+@media all {
 
 }
 
-@mixin test{
+@media(min-width: 868px) {
+
+}
+
+@media(min-width: 1190px) {
+
+}
+
+@mixin test {
  background-color: blueviolet;
 }
-@mixin clear{
- &:after{
+
+@mixin clear {
+ &:after {
   content: '';
   display: block;
-  clear:both;
+  clear: both;
  }
 }
 
-html{
+html {
  width: 100%;
- body{
+ min-height:100%;
+ body {
   width: 100%;
+  min-height:100%;
   background: url("../img/trassa.jpg") 50% 50% no-repeat;
-  -webkit-background-size:100% 100%;
+  -webkit-background-size: 100% 100%;
   background-size: 100% 100%;
   position: relative;
-  .content-box{
+  .content-box {
    width: 50%;
    position: relative;
-   margin: 0 auto ;
+   margin: 0 auto;
    background-color: white;
    opacity: 0.95;
-   &:after{
-    content:'';
+   &:after {
+    content: '';
     display: block;
     clear: both;
    }
    // ---- Custom style list must be here -------
-   .et_pb_row, .et_pb_column .et_pb_row_inner{
+   .et_pb_row, .et_pb_column .et_pb_row_inner {
     padding: 0 !important;
    }
 
-   .bus-trip-form-block{
+   .bus-trip-form-block {
     width: 100%;
     position: relative;
     box-shadow: 0 0 20px #0099ff;
-    &:after{
-     content:'';
+    &:after {
+     content: '';
      display: block;
      clear: both;
     }
-    .bus-trip-form{
+    .bus-trip-form {
      width: 100%;
      position: relative;
 
-     .bus-form-header{
+     .bus-form-header {
       width: 100%;
       height: 40px;
       background-color: #0099ff;
-      .bus-header-title{
+      .bus-header-title {
        height: 40px;
        margin-right: 180px;
        line-height: 40px;
@@ -75,26 +80,30 @@ html{
        color: white;
        font-weight: bold;
       }
-      .bus-header-action{
+      .bus-header-action {
        height: 40px;
        width: 180px;
        float: right;
        line-height: 40px;
        color: white;
        font-weight: bold;
+       &:hover {
+        cursor: pointer;
+        color: #006699;
+       }
       }
      }
-     .bus-form-type{
+     .bus-form-type {
       width: 100%;
       min-height: 155px;
       margin-bottom: 20px;
       background-color: #ffffff;
       opacity: 1;
-      .bus-type-item{
+      .bus-type-item {
        width: 100%;
-       .bus-item-field{
+       .bus-item-field {
         position: relative;
-        .bus-item-icon{
+        .bus-item-icon {
          width: 30px;
          height: 30px;
          position: absolute;
@@ -111,34 +120,34 @@ html{
         .overflow {
          height: 150px;
         }
-        #trip_type-button{
+        #trip_type-button {
          width: 80%;
          margin-left: 53px;
          outline-color: #0099ff !important;
-         &:focus{
+         &:focus {
           border: 1px solid #0099ff !important;
          }
-         .ui-selectmenu-icon{
+         .ui-selectmenu-icon {
           background: url("../img/icon.png") 50% 50% no-repeat !important;
-          -webkit-background-size:100% 100%;
-          background-size:90% 90%;
+          -webkit-background-size: 100% 100%;
+          background-size: 90% 90%;
           outline-color: transparent !important;
           left: 45px;
          }
-         .ui-selectmenu-text{
+         .ui-selectmenu-text {
           font-size: 100%;
           color: #006699;
          }
         }
        }
       }
-      .part-one{
-       .part-one-left{
+      .part-one {
+       .part-one-left {
         display: inline-block;
         width: 50%;
         height: 100%;
         position: relative;
-        .part-item-icon{
+        .part-item-icon {
          width: 15px;
          height: 15px;
          position: absolute;
@@ -146,31 +155,31 @@ html{
          left: 15px;
          background: url("../img/day1_03.png") 50% 50% no-repeat;
         }
-        label{
+        label {
          display: block;
          font-size: 75%;
          margin: 10px 0 3px 56px;
         }
-        input{
+        input {
          height: 30px;
          width: 80%;
          font-size: 100%;
          color: #006699;
          outline-color: #0099ff !important;
          margin-left: 53px;
-         &:focus{
+         &:focus {
           border: 1px solid #0099ff !important;
          }
         }
        }
-       .part-one-center{
+       .part-one-center {
         width: 25%;
         display: inline-block;
         height: 100%;
-        .bus-item-field{
+        .bus-item-field {
          position: relative;
          width: 100%;
-         .date_picker_control{
+         .date_picker_control {
           position: absolute;
           top: 25px;
           right: 20px;
@@ -183,24 +192,24 @@ html{
           font-size: 75%;
           margin: 16px 0 3px 0;
          }
-         input{
+         input {
           width: 90%;
           display: inline-block;
           height: 30px;
           outline-color: #0099ff !important;
           font-size: 100%;
           color: #006699;
-          &:focus{
+          &:focus {
            border: 1px solid #0099ff !important;
           }
          }
         }
        }
-       .part-one-right{
+       .part-one-right {
         width: 25%;
         display: inline-block;
         height: 100%;
-        .bus-item-field{
+        .bus-item-field {
          position: relative;
          width: 100%;
          label {
@@ -211,20 +220,20 @@ html{
          .overflow {
           height: 150px;
          }
-         #depart_time-button{
+         #depart_time-button {
           width: 50%;
           outline-color: #0099ff !important;
-          &:focus{
+          &:focus {
            border: 1px solid #0099ff !important;
           }
-          .ui-selectmenu-icon{
+          .ui-selectmenu-icon {
            background: url("../img/icon.png") 50% 50% no-repeat !important;
-           -webkit-background-size:100% 100%;
-           background-size:90% 90%;
+           -webkit-background-size: 100% 100%;
+           background-size: 90% 90%;
            outline-color: transparent !important;
            left: 50px;
           }
-          .ui-selectmenu-text{
+          .ui-selectmenu-text {
            font-size: 100%;
            color: #006699;
           }
@@ -232,43 +241,43 @@ html{
         }
        }
       }
-      .part-next{
-       .part-next-left{
+      .part-next {
+       .part-next-left {
         width: 50%;
         display: inline-block;
         position: relative;
-        .part-item-icon{
+        .part-item-icon {
          width: 15px;
          height: 15px;
          position: absolute;
          top: 45px;
          left: 15px;
          background: url("../img/day1_03.png") 50% 50% no-repeat;
-         &.part-pasive{
+         &.part-pasive {
           background: url("../img/day1_03_pasive.png") 50% 50% no-repeat
          }
         }
-        label{
+        label {
          display: block;
          font-size: 75%;
          margin: 20px 0 3px 56px;
         }
-        input{
+        input {
          height: 30px;
          width: 80%;
          font-size: 100%;
          color: #006699;
          outline-color: #0099ff !important;
          margin-left: 53px;
-         &:focus{
+         &:focus {
           border: 1px solid #0099ff !important;
          }
         }
        }
-       .part-next-center{
+       .part-next-center {
         width: 25%;
         display: inline-block;
-        .bus-item-field{
+        .bus-item-field {
          position: relative;
          width: 100%;
          label {
@@ -279,45 +288,183 @@ html{
          .overflow {
           height: 150px;
          }
-         #sur_place-button{
+         #sur_place-button {
           width: 50%;
           outline-color: #0099ff !important;
-          &:focus{
+          &:focus {
            border: 1px solid #0099ff !important;
           }
-          .ui-selectmenu-icon{
+          .ui-selectmenu-icon {
            background: url("../img/icon.png") 50% 50% no-repeat !important;
-           -webkit-background-size:100% 100%;
-           background-size:90% 90%;
+           -webkit-background-size: 100% 100%;
+           background-size: 90% 90%;
            outline-color: transparent !important;
            left: 50px;
           }
-          .ui-selectmenu-text{
+          .ui-selectmenu-text {
            font-size: 100%;
            color: #006699;
           }
          }
         }
        }
-       .part-next-right{
+       .part-next-right {
         width: 25%;
         display: inline-block;
 
        }
       }
      }
-     .bus-form-steps{
+     .bus-form-steps {
       width: 100%;
-      min-height: 245px;
       background-color: #f5f8fa;
-
+      .steps-header {
+       height: 24px;
+       position: relative;
+       padding-top: 10px;
+       padding-bottom: 10px;
+       .steps-icon {
+        display: block;
+        position: absolute;
+        top: 10px;
+        left: 0;
+        height: 24px;
+        width: 24px;
+        margin-left: 17px;
+        background: url("../img/form icon2.png") 50% 50% no-repeat;
+        -webkit-background-size: 100% 100%;
+        background-size: 100% 100%;
+       }
+       .steps-title {
+        display: inline-block;
+        height: 24px;
+        line-height: 24px;
+        margin-left: 60px;
+        padding-bottom: 20px;
+        font-size: 90%;
+        color: #0099ff;
+       }
+       .steps-action {
+        display: inline-block;
+        width: 73px;
+        height: 24px;
+        background: url("../img/step_switch.png");
+        color: white;
+        font-size: 60%;
+        margin-left: 30px;
+        text-align: center;
+        line-height: 24px;
+        font-weight: bold;
+        &:hover {
+         cursor: pointer;
+        }
+        &.active-switch {
+         background: url("../img/step_switch_active.png");
+        }
+       }
+      }
+      .step-parts {
+       width: 100%;
+       .step-part {
+        width: 100%;
+        display: block;
+        .step-part-title {
+         display: inline-block;
+         width: 40%;
+         height: 72px;
+         label {
+          display: block;
+          font-size: 75%;
+          margin: 20px 0 3px 56px;
+         }
+         input {
+          height: 30px;
+          width: 70%;
+          font-size: 100%;
+          color: #006699;
+          outline-color: #0099ff !important;
+          margin-left: 53px;
+          &:focus {
+           border: 1px solid #0099ff !important;
+          }
+         }
+        }
+        .step-part-time {
+         height: 72px;
+         display: inline-block;
+         width: 30%;
+         label {
+          display: block;
+          font-size: 75%;
+          margin: 16px 0 3px 0;
+         }
+         .overflow {
+          height: 150px;
+         }
+         #step-part-time-button {
+          width: 40%;
+          outline-color: #0099ff !important;
+          &:focus {
+           border: 1px solid #0099ff !important;
+          }
+          .ui-selectmenu-icon {
+           background: url("../img/icon.png") 50% 50% no-repeat !important;
+           -webkit-background-size: 100% 100%;
+           background-size: 90% 90%;
+           outline-color: transparent !important;
+           left: 50px;
+          }
+          .ui-selectmenu-text {
+           font-size: 100%;
+           color: #006699;
+          }
+         }
+         #step-part-time2-button {
+          width: 40%;
+          outline-color: #0099ff !important;
+          &:focus {
+           border: 1px solid #0099ff !important;
+          }
+          .ui-selectmenu-icon {
+           background: url("../img/icon.png") 50% 50% no-repeat !important;
+           -webkit-background-size: 100% 100%;
+           background-size: 90% 90%;
+           outline-color: transparent !important;
+           left: 50px;
+          }
+          .ui-selectmenu-text {
+           font-size: 100%;
+           color: #006699;
+          }
+         }
+        }
+       }
+       .step-part-add {
+        width: 100%;
+        height: 30px;
+        margin-top: 20px;
+        .step-add-action {
+         height: 30px;
+         margin-left: 30px;
+         display: inline-block;
+         width: 200px;
+         font-size: 100%;
+         font-weight: bold;
+         color: #0099ff;
+         &:hover {
+          cursor: pointer;
+          color: #006699;
+         }
+        }
+       }
+      }
      }
-     .bus-form-passenger{
+     .bus-form-passenger {
       width: 100%;
       min-height: 180px;
       background-color: #ffffff;
      }
-     .bus-form-footer{
+     .bus-form-footer {
       width: 100%;
       height: 5px;
       position: absolute;

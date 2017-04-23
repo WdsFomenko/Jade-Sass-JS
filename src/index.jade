@@ -1,68 +1,90 @@
 doctype html
 html(lang='en')
-    head
-        meta(charset='utf-8')
-        meta(name='viewport', content='width=device-width, initial-scale=1')
-        title Jade-Sass-Js build environment
-        link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
-        link(rel='stylesheet', href='style/style.css')
-        script(src='https://code.jquery.com/jquery-1.12.4.js')
-        script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
-        script(src='js/main.js')
-    body
-        .content-box
-            .bus-trip-form-block.clearfix
-              form.bus-trip-form(method='post', action='')
-                .bus-form-header
-                  .bus-header-action
-                    span +  
-                    span Ajouter une journee
-                  .bus-header-title
-                    span JOUR 1
-                .bus-form-type
-                  .bus-type-item
-                    .bus-item-field
-                       div.bus-item-icon
-                       label(for='trip_type') TYPE DE TRAJET
-                       select#trip_type(name='trip_type')
-                         option Slower
-                         option Slow
-                         option(selected='selected') Medium
-                         option Fast
-                         option Faster
-                  .bus-item-parts
-                    .part-one
-                      .part-one-left
-                        div.part-item-icon
-                        label(for='part-one-input') LIEU DE DEPART
-                        input(id='part-one-input')
-                      .part-one-center
-                        .bus-item-field
-                            div.date_picker_control 
-                            label(for='depart_date') DEPART
-                            input#depart_date(name='depart_date')
-                      .part-one-right
-                         .bus-item-field
-                            label(for='depart_time') HEURE DE DEPART
-                            select#depart_time(name='depart_time')
-                                option 9h30
-                                option 12h30
-                    .part-next
-                        .part-next-left
-                            div.part-item-icon.part-pasive
-                            label(for='part-next-input') LIEU DE ARRIVE
-                            input(id='part-next-input')
-                        .part-next-center
-                            .bus-item-field
-                                label(for='sur_place') DUREE SUR PLACE
-                                select#sur_place(name='sur_place')
-                                    option 4h30
-                                    option 5h30
-                        .part-next-right
-                .bus-form-steps
-                    .steps-header
-                        .steps-icon
-                        .steps-title
-                        .steps-action
-                .bus-form-passenger
-                .bus-form-footer
+  head
+    meta(charset='utf-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    title Jade-Sass-Js build environment
+    link(rel='stylesheet', href='//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css')
+    link(rel='stylesheet', href='style/style.css')
+    script(src='https://code.jquery.com/jquery-1.12.4.js')
+    script(src='https://code.jquery.com/ui/1.12.1/jquery-ui.js')
+    script(src='js/main.js')
+  body
+    .content-box
+      .bus-trip-form-block.clearfix
+        form.bus-trip-form(method='post', action='')
+          .bus-form-header
+            .bus-header-action
+              span +  
+              span Ajouter une journee
+            .bus-header-title
+              span JOUR 1
+          .bus-form-type
+            .bus-type-item
+              .bus-item-field
+                div.bus-item-icon
+                label(for='trip_type') TYPE DE TRAJET
+                select#trip_type(name='trip_type')
+                  option Slower
+                  option Slow
+                  option(selected='selected') Medium
+                  option Fast
+                  option Faster
+            .bus-item-parts
+              .part-one
+                .part-one-left
+                  div.part-item-icon
+                  label(for='part-one-input') LIEU DE DEPART
+                  input(id='part-one-input')
+                .part-one-center
+                  .bus-item-field
+                    div.date_picker_control
+                    label(for='depart_date') DEPART
+                    input#depart_date(name='depart_date')
+                .part-one-right
+                  .bus-item-field
+                    label(for='depart_time') HEURE DE DEPART
+                    select#depart_time(name='depart_time')
+                      option 9h30
+                      option 12h30
+              .part-next
+                .part-next-left
+                  div.part-item-icon.part-pasive
+                  label(for='part-next-input') LIEU DE ARRIVE
+                  input(id='part-next-input')
+                .part-next-center
+                  .bus-item-field
+                    label(for='sur_place') DUREE SUR PLACE
+                    select#sur_place(name='sur_place')
+                      option 4h30
+                      option 5h30
+                .part-next-right
+          .bus-form-steps
+            .steps-header
+              .steps-icon
+              .steps-title ETAPES ALLER:
+              div#step-switcher.steps-action OFF
+            .step-parts
+              .step-part
+                .step-part-title
+                  label(for='step-part-title') ETAPE 1
+                  input(id='step-part-title' value='Aix-in-Provence')
+                .step-part-time
+                  .bus-item-field
+                    label(for='step-part-time') DUREE SER PLACE
+                    select(id='step-part-time')
+                      option 3h25
+                      option 12h30
+              .step-part
+                .step-part-title
+                  label(for='step-part-title2') ETAPE 2
+                  input(id='step-part-title2')
+                .step-part-time
+                  label(for='step-part-time2') DUREE SER PLACE
+                  select(id='step-part-time2')
+                    option 2h30
+                    option 6h40
+              .step-part-add
+                .step-add-action + Ajouter  une etape
+          .bus-form-passenger
+          .bus-form-footer

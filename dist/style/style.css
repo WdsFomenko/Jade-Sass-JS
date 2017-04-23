@@ -5,9 +5,11 @@
   border-collapse: collapse; }
 
 html {
-  width: 100%; }
+  width: 100%;
+  min-height: 100%; }
   html body {
     width: 100%;
+    min-height: 100%;
     background: url("../img/trassa.jpg") 50% 50% no-repeat;
     -webkit-background-size: 100% 100%;
     background-size: 100% 100%;
@@ -53,6 +55,9 @@ html {
               line-height: 40px;
               color: white;
               font-weight: bold; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-header .bus-header-action:hover {
+                cursor: pointer;
+                color: #006699; }
           html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type {
             width: 100%;
             min-height: 155px;
@@ -228,8 +233,121 @@ html {
               display: inline-block; }
           html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps {
             width: 100%;
-            min-height: 245px;
             background-color: #f5f8fa; }
+            html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .steps-header {
+              height: 24px;
+              position: relative;
+              padding-top: 10px;
+              padding-bottom: 10px; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .steps-header .steps-icon {
+                display: block;
+                position: absolute;
+                top: 10px;
+                left: 0;
+                height: 24px;
+                width: 24px;
+                margin-left: 17px;
+                background: url("../img/form icon2.png") 50% 50% no-repeat;
+                -webkit-background-size: 100% 100%;
+                background-size: 100% 100%; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .steps-header .steps-title {
+                display: inline-block;
+                height: 24px;
+                line-height: 24px;
+                margin-left: 60px;
+                padding-bottom: 20px;
+                font-size: 90%;
+                color: #0099ff; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .steps-header .steps-action {
+                display: inline-block;
+                width: 73px;
+                height: 24px;
+                background: url("../img/step_switch.png");
+                color: white;
+                font-size: 60%;
+                margin-left: 30px;
+                text-align: center;
+                line-height: 24px;
+                font-weight: bold; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .steps-header .steps-action:hover {
+                  cursor: pointer; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .steps-header .steps-action.active-switch {
+                  background: url("../img/step_switch_active.png"); }
+            html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts {
+              width: 100%; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part {
+                width: 100%;
+                display: block; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-title {
+                  display: inline-block;
+                  width: 40%;
+                  height: 72px; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-title label {
+                    display: block;
+                    font-size: 75%;
+                    margin: 20px 0 3px 56px; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-title input {
+                    height: 30px;
+                    width: 70%;
+                    font-size: 100%;
+                    color: #006699;
+                    outline-color: #0099ff !important;
+                    margin-left: 53px; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-title input:focus {
+                      border: 1px solid #0099ff !important; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time {
+                  height: 72px;
+                  display: inline-block;
+                  width: 30%; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time label {
+                    display: block;
+                    font-size: 75%;
+                    margin: 16px 0 3px 0; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time .overflow {
+                    height: 150px; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time-button {
+                    width: 40%;
+                    outline-color: #0099ff !important; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time-button:focus {
+                      border: 1px solid #0099ff !important; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time-button .ui-selectmenu-icon {
+                      background: url("../img/icon.png") 50% 50% no-repeat !important;
+                      -webkit-background-size: 100% 100%;
+                      background-size: 90% 90%;
+                      outline-color: transparent !important;
+                      left: 50px; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time-button .ui-selectmenu-text {
+                      font-size: 100%;
+                      color: #006699; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time2-button {
+                    width: 40%;
+                    outline-color: #0099ff !important; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time2-button:focus {
+                      border: 1px solid #0099ff !important; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time2-button .ui-selectmenu-icon {
+                      background: url("../img/icon.png") 50% 50% no-repeat !important;
+                      -webkit-background-size: 100% 100%;
+                      background-size: 90% 90%;
+                      outline-color: transparent !important;
+                      left: 50px; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time2-button .ui-selectmenu-text {
+                      font-size: 100%;
+                      color: #006699; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part-add {
+                width: 100%;
+                height: 30px;
+                margin-top: 20px; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part-add .step-add-action {
+                  height: 30px;
+                  margin-left: 30px;
+                  display: inline-block;
+                  width: 200px;
+                  font-size: 100%;
+                  font-weight: bold;
+                  color: #0099ff; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part-add .step-add-action:hover {
+                    cursor: pointer;
+                    color: #006699; }
           html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger {
             width: 100%;
             min-height: 180px;
