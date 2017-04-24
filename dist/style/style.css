@@ -15,7 +15,7 @@ html {
     background-size: 100% 100%;
     position: relative; }
     html body .content-box {
-      width: 50%;
+      width: 90%;
       position: relative;
       margin: 0 auto;
       background-color: white;
@@ -83,7 +83,7 @@ html {
                 html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .bus-type-item .bus-item-field .overflow {
                   height: 150px; }
                 html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .bus-type-item .bus-item-field #trip_type-button {
-                  width: 80%;
+                  width: 82%;
                   margin-left: 53px;
                   outline-color: #0099ff !important; }
                   html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .bus-type-item .bus-item-field #trip_type-button:focus {
@@ -92,8 +92,7 @@ html {
                     background: url("../img/icon.png") 50% 50% no-repeat !important;
                     -webkit-background-size: 100% 100%;
                     background-size: 90% 90%;
-                    outline-color: transparent !important;
-                    left: 45px; }
+                    outline-color: transparent !important; }
                   html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .bus-type-item .bus-item-field #trip_type-button .ui-selectmenu-text {
                     font-size: 100%;
                     color: #006699; }
@@ -171,66 +170,73 @@ html {
                     background: url("../img/icon.png") 50% 50% no-repeat !important;
                     -webkit-background-size: 100% 100%;
                     background-size: 90% 90%;
-                    outline-color: transparent !important;
-                    left: 50px; }
+                    outline-color: transparent !important; }
                   html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-one .part-one-right .bus-item-field #depart_time-button .ui-selectmenu-text {
                     font-size: 100%;
                     color: #006699; }
-            html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left {
-              width: 50%;
-              display: inline-block;
+            html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next {
               position: relative; }
-              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left .part-item-icon {
-                width: 15px;
-                height: 15px;
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-line {
                 position: absolute;
-                top: 45px;
-                left: 15px;
-                background: url("../img/day1_03.png") 50% 50% no-repeat; }
-                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left .part-item-icon.part-pasive {
-                  background: url("../img/day1_03_pasive.png") 50% 50% no-repeat; }
-              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left label {
-                display: block;
-                font-size: 75%;
-                margin: 20px 0 3px 56px; }
-              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left input {
-                height: 30px;
-                width: 80%;
-                font-size: 100%;
-                color: #006699;
-                outline-color: #0099ff !important;
-                margin-left: 53px; }
-                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left input:focus {
-                  border: 1px solid #0099ff !important; }
-            html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center {
-              width: 25%;
-              display: inline-block; }
-              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field {
-                position: relative;
-                width: 100%; }
-                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field label {
+                width: 2px;
+                height: 40px;
+                background-color: #006699;
+                top: -5px;
+                left: 22px; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left {
+                width: 50%;
+                display: inline-block;
+                position: relative; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left .part-item-icon {
+                  width: 15px;
+                  height: 15px;
+                  position: absolute;
+                  top: 45px;
+                  left: 15px;
+                  background: url("../img/day1_03.png") 50% 50% no-repeat; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left .part-item-icon.part-pasive {
+                    background: url("../img/day1_03_pasive.png") 50% 50% no-repeat; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left label {
                   display: block;
                   font-size: 75%;
-                  margin: 16px 0 3px 0; }
-                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field .overflow {
-                  height: 150px; }
-                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field #sur_place-button {
-                  width: 50%;
-                  outline-color: #0099ff !important; }
-                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field #sur_place-button:focus {
+                  margin: 20px 0 3px 56px; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left input {
+                  height: 30px;
+                  width: 80%;
+                  font-size: 100%;
+                  color: #006699;
+                  outline-color: #0099ff !important;
+                  margin-left: 53px; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-left input:focus {
                     border: 1px solid #0099ff !important; }
-                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field #sur_place-button .ui-selectmenu-icon {
-                    background: url("../img/icon.png") 50% 50% no-repeat !important;
-                    -webkit-background-size: 100% 100%;
-                    background-size: 90% 90%;
-                    outline-color: transparent !important;
-                    left: 50px; }
-                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field #sur_place-button .ui-selectmenu-text {
-                    font-size: 100%;
-                    color: #006699; }
-            html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-right {
-              width: 25%;
-              display: inline-block; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center {
+                width: 25%;
+                display: inline-block; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field {
+                  position: relative;
+                  width: 100%; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field label {
+                    display: block;
+                    font-size: 75%;
+                    margin: 16px 0 3px 0; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field .overflow {
+                    height: 150px; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field #sur_place-button {
+                    width: 50%;
+                    outline-color: #0099ff !important; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field #sur_place-button:focus {
+                      border: 1px solid #0099ff !important; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field #sur_place-button .ui-selectmenu-icon {
+                      background: url("../img/icon.png") 50% 50% no-repeat !important;
+                      -webkit-background-size: 100% 100%;
+                      background-size: 90% 90%;
+                      outline-color: transparent !important; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-center .bus-item-field #sur_place-button .ui-selectmenu-text {
+                      font-size: 100%;
+                      color: #006699; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-type .part-next .part-next-right {
+                width: 25%;
+                display: inline-block; }
           html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps {
             width: 100%;
             background-color: #f5f8fa; }
@@ -305,18 +311,17 @@ html {
                     margin: 16px 0 3px 0; }
                   html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time .overflow {
                     height: 150px; }
-                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time-button {
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time span[role] {
                     width: 40%;
                     outline-color: #0099ff !important; }
-                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time-button:focus {
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time span[role]:focus {
                       border: 1px solid #0099ff !important; }
-                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time-button .ui-selectmenu-icon {
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time span[role] .ui-selectmenu-icon {
                       background: url("../img/icon.png") 50% 50% no-repeat !important;
                       -webkit-background-size: 100% 100%;
                       background-size: 90% 90%;
-                      outline-color: transparent !important;
-                      left: 50px; }
-                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time-button .ui-selectmenu-text {
+                      outline-color: transparent !important; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time span[role] .ui-selectmenu-text {
                       font-size: 100%;
                       color: #006699; }
                   html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time2-button {
@@ -328,8 +333,7 @@ html {
                       background: url("../img/icon.png") 50% 50% no-repeat !important;
                       -webkit-background-size: 100% 100%;
                       background-size: 90% 90%;
-                      outline-color: transparent !important;
-                      left: 50px; }
+                      outline-color: transparent !important; }
                     html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-steps .step-parts .step-part .step-part-time #step-part-time2-button .ui-selectmenu-text {
                       font-size: 100%;
                       color: #006699; }
@@ -350,8 +354,136 @@ html {
                     color: #006699; }
           html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger {
             width: 100%;
-            min-height: 180px;
-            background-color: #ffffff; }
+            background-color: #ffffff;
+            margin-top: 30px;
+            margin-bottom: 30px; }
+            html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section {
+              display: inline-block;
+              width: 50%; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header {
+                position: relative; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header .passenger-icon {
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 24px;
+                  width: 24px;
+                  margin-left: 17px;
+                  background: url("../img/form icon3.png") 50% 50% no-repeat;
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header .comfort-icon {
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: 120px;
+                  height: 24px;
+                  width: 24px;
+                  margin-left: 17px;
+                  background: url("../img/form-info-icon.png") 50% 50% no-repeat;
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header .comfort-title {
+                  display: inline-block;
+                  height: 24px;
+                  line-height: 24px;
+                  margin-left: 60px;
+                  padding-bottom: 20px;
+                  font-size: 90%;
+                  color: #0099ff; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header .passenger-title {
+                  display: inline-block;
+                  height: 24px;
+                  line-height: 24px;
+                  margin-left: 60px;
+                  padding-bottom: 20px;
+                  font-size: 90%;
+                  color: #0099ff; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header-right {
+                position: relative; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header-right .passenger-icon {
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: 0;
+                  height: 24px;
+                  width: 24px;
+                  margin-left: 17px;
+                  background: url("../img/form icon3.png") 50% 50% no-repeat;
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header-right .comfort-icon {
+                  display: block;
+                  position: absolute;
+                  top: 0;
+                  left: 60px;
+                  height: 24px;
+                  width: 24px;
+                  margin-left: 17px;
+                  background: url("../img/form-info-icon.png") 50% 50% no-repeat;
+                  -webkit-background-size: 100% 100%;
+                  background-size: 100% 100%; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header-right .comfort-title {
+                  display: inline-block;
+                  height: 24px;
+                  line-height: 24px;
+                  margin-left: 5px;
+                  padding-bottom: 20px;
+                  font-size: 90%;
+                  color: #0099ff; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-header-right .passenger-title {
+                  display: inline-block;
+                  height: 24px;
+                  line-height: 24px;
+                  margin-left: 60px;
+                  padding-bottom: 20px;
+                  font-size: 90%;
+                  color: #0099ff; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-action {
+                width: 100%;
+                height: 30px; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-action input.passenger-number-input {
+                  height: 30px;
+                  display: inline-block;
+                  margin-left: 53px;
+                  font-size: 90%;
+                  padding-left: 10px;
+                  color: grey; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-action label.radio-input {
+                  background-color: transparent;
+                  border: 1px solid transparent;
+                  color: grey; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-action label.radio-input.ui-state-active .ui-icon-background {
+                    border: 4px solid #0099ff; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-action label.radio-input:focus {
+                    background-color: transparent;
+                    border: 1px solid transparent;
+                    color: grey; }
+                html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-action .passenger-baggage {
+                  display: inline-block; }
+                  html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-action .passenger-baggage label {
+                    background-color: transparent;
+                    margin-left: 20px;
+                    border: 1px solid transparent;
+                    color: grey !important; }
+                    html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-passenger .passenger-section .passenger-action .passenger-baggage label:focus {
+                      color: grey !important;
+                      border: 1px solid transparent; }
+          html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-footer-control {
+            width: 100%;
+            height: 54px; }
+            html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-footer-control button#footer-trip-control {
+              display: block;
+              height: 54px;
+              width: 250px;
+              margin: 0 auto;
+              color: white;
+              font-weight: bold;
+              font-size: 100%;
+              background-color: #0099ff; }
+              html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-footer-control button#footer-trip-control:hover {
+                cursor: pointer; }
           html body .content-box .bus-trip-form-block .bus-trip-form .bus-form-footer {
             width: 100%;
             height: 5px;

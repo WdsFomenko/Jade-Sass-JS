@@ -14,7 +14,7 @@ html(lang='en')
       .bus-trip-form-block.clearfix
         form.bus-trip-form(method='post', action='')
           .bus-form-header
-            .bus-header-action
+            .bus-header-action#add-tour-control
               span +  
               span Ajouter une journee
             .bus-header-title
@@ -48,6 +48,7 @@ html(lang='en')
                       option 9h30
                       option 12h30
               .part-next
+                div.part-next-line
                 .part-next-left
                   div.part-item-icon.part-pasive
                   label(for='part-next-input') LIEU DE ARRIVE
@@ -64,7 +65,7 @@ html(lang='en')
               .steps-icon
               .steps-title ETAPES ALLER:
               div#step-switcher.steps-action OFF
-            .step-parts
+            .step-parts#step-part-box
               .step-part
                 .step-part-title
                   label(for='step-part-title') ETAPE 1
@@ -75,16 +76,30 @@ html(lang='en')
                     select(id='step-part-time')
                       option 3h25
                       option 12h30
-              .step-part
-                .step-part-title
-                  label(for='step-part-title2') ETAPE 2
-                  input(id='step-part-title2')
-                .step-part-time
-                  label(for='step-part-time2') DUREE SER PLACE
-                  select(id='step-part-time2')
-                    option 2h30
-                    option 6h40
-              .step-part-add
-                .step-add-action + Ajouter  une etape
+              .step-part-add#box-steps
+                .step-add-action#add-stage-control + Ajouter  une etape
           .bus-form-passenger
+            .passenger-section.left-section-part
+              .passenger-header
+                .passenger-icon
+                .passenger-title PASSAGERS
+              .passenger-action
+                input.passenger-number-input(placeholder='mini, 10')
+                .passenger-baggage
+                  label(for='checkbox-nested-4')
+                    | Avec bagages
+                    input#checkbox-nested-4(type='checkbox', name='checkbox-nested-4')
+            .passenger-section
+              .passenger-header-right
+                .comfort-title CONFORT
+                .comfort-icon
+              .passenger-action
+                label.radio-input(for='transmission-standard-v') Standard
+                input#transmission-standard-v(type='radio', name='transmission-v')
+                label.radio-input(for='transmission-excursion-v') Excursion
+                input#transmission-excursion-v(type='radio', name='transmission-v')
+                label.radio-input(for='transmission-tourist-v') Grand Tourisme
+                input#transmission-tourist-v(type='radio', name='transmission-v')
+          .bus-form-footer-control
+            button#footer-trip-control OBTENIR MON DEVIS >
           .bus-form-footer

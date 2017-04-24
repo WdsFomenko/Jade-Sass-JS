@@ -40,7 +40,7 @@ html {
   background-size: 100% 100%;
   position: relative;
   .content-box {
-   width: 50%;
+   width: 90%;
    position: relative;
    margin: 0 auto;
    background-color: white;
@@ -121,7 +121,7 @@ html {
          height: 150px;
         }
         #trip_type-button {
-         width: 80%;
+         width: 82%;
          margin-left: 53px;
          outline-color: #0099ff !important;
          &:focus {
@@ -132,7 +132,6 @@ html {
           -webkit-background-size: 100% 100%;
           background-size: 90% 90%;
           outline-color: transparent !important;
-          left: 45px;
          }
          .ui-selectmenu-text {
           font-size: 100%;
@@ -231,7 +230,6 @@ html {
            -webkit-background-size: 100% 100%;
            background-size: 90% 90%;
            outline-color: transparent !important;
-           left: 50px;
           }
           .ui-selectmenu-text {
            font-size: 100%;
@@ -242,6 +240,15 @@ html {
        }
       }
       .part-next {
+       position: relative;
+       .part-next-line{
+        position: absolute;
+        width: 2px;
+        height: 40px;
+        background-color: #006699;
+        top: -5px;
+        left: 22px;
+       }
        .part-next-left {
         width: 50%;
         display: inline-block;
@@ -299,7 +306,6 @@ html {
            -webkit-background-size: 100% 100%;
            background-size: 90% 90%;
            outline-color: transparent !important;
-           left: 50px;
           }
           .ui-selectmenu-text {
            font-size: 100%;
@@ -401,7 +407,7 @@ html {
          .overflow {
           height: 150px;
          }
-         #step-part-time-button {
+         span[role] {
           width: 40%;
           outline-color: #0099ff !important;
           &:focus {
@@ -412,7 +418,6 @@ html {
            -webkit-background-size: 100% 100%;
            background-size: 90% 90%;
            outline-color: transparent !important;
-           left: 50px;
           }
           .ui-selectmenu-text {
            font-size: 100%;
@@ -430,7 +435,6 @@ html {
            -webkit-background-size: 100% 100%;
            background-size: 90% 90%;
            outline-color: transparent !important;
-           left: 50px;
           }
           .ui-selectmenu-text {
            font-size: 100%;
@@ -461,8 +465,161 @@ html {
      }
      .bus-form-passenger {
       width: 100%;
-      min-height: 180px;
       background-color: #ffffff;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      .passenger-section{
+       display: inline-block;
+       width: 50%;
+       .passenger-header{
+        position: relative;
+        .passenger-icon {
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 24px;
+         width: 24px;
+         margin-left: 17px;
+         background: url("../img/form icon3.png") 50% 50% no-repeat;
+         -webkit-background-size: 100% 100%;
+         background-size: 100% 100%;
+        }
+        .comfort-icon{
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 120px;
+         height: 24px;
+         width: 24px;
+         margin-left: 17px;
+         background: url("../img/form-info-icon.png") 50% 50% no-repeat;
+         -webkit-background-size: 100% 100%;
+         background-size: 100% 100%;
+        }
+        .comfort-title{
+         display: inline-block;
+         height: 24px;
+         line-height: 24px;
+         margin-left: 60px;
+         padding-bottom: 20px;
+         font-size: 90%;
+         color: #0099ff;
+        }
+        .passenger-title {
+         display: inline-block;
+         height: 24px;
+         line-height: 24px;
+         margin-left: 60px;
+         padding-bottom: 20px;
+         font-size: 90%;
+         color: #0099ff;
+        }
+       }
+       .passenger-header-right{
+        position: relative;
+        .passenger-icon {
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 0;
+         height: 24px;
+         width: 24px;
+         margin-left: 17px;
+         background: url("../img/form icon3.png") 50% 50% no-repeat;
+         -webkit-background-size: 100% 100%;
+         background-size: 100% 100%;
+        }
+        .comfort-icon{
+         display: block;
+         position: absolute;
+         top: 0;
+         left: 60px;
+         height: 24px;
+         width: 24px;
+         margin-left: 17px;
+         background: url("../img/form-info-icon.png") 50% 50% no-repeat;
+         -webkit-background-size: 100% 100%;
+         background-size: 100% 100%;
+        }
+        .comfort-title{
+         display: inline-block;
+         height: 24px;
+         line-height: 24px;
+         margin-left: 5px;
+         padding-bottom: 20px;
+         font-size: 90%;
+         color: #0099ff;
+        }
+        .passenger-title {
+         display: inline-block;
+         height: 24px;
+         line-height: 24px;
+         margin-left: 60px;
+         padding-bottom: 20px;
+         font-size: 90%;
+         color: #0099ff;
+        }
+       }
+       .passenger-action{
+        width: 100%;
+        height: 30px;
+        input.passenger-number-input{
+         height: 30px;
+         display: inline-block;
+         margin-left: 53px;
+         font-size: 90%;
+         padding-left: 10px;
+         color: grey;
+        }
+        label.radio-input{
+         background-color: transparent;
+         border: 1px solid transparent;
+         color: grey;
+         &.ui-state-active {
+          .ui-icon-background {
+           border: 4px solid #0099ff;
+          }
+         }
+         &:focus{
+          background-color: transparent;
+          border: 1px solid transparent;
+          color: grey;
+         }
+        }
+        .passenger-baggage{
+         display: inline-block;
+         label{
+          background-color: transparent;
+          margin-left: 20px;
+          border: 1px solid transparent;
+          color: grey !important;
+          &:focus{
+           color: grey !important;
+           border: 1px solid transparent;
+          }
+         }
+        }
+       }
+      }
+
+     }
+     .bus-form-footer-control{
+      width: 100%;
+      height: 54px;
+      button#footer-trip-control{
+       display: block;
+       height: 54px;
+       width: 250px;
+       margin: 0 auto;
+       color: white;
+       font-weight: bold;
+       font-size: 100%;
+       background-color: #0099ff;
+       &:hover{
+        cursor: pointer;
+       }
+      }
      }
      .bus-form-footer {
       width: 100%;
